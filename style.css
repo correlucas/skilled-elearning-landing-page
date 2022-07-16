@@ -37,7 +37,16 @@ button {
 /* colors  */
 :root {
   /* primary */
-  --dark-cyan: hsla(192, 37%, 48%, 1);
+  --dark-blue: hsla(234, 53%, 16%, 1);
+  --pink: hsla(341, 92%, 62%, 1);
+  --light-pink: hsla(341, 100%, 83%, 1);
+  /* neutral */
+  --gray: hsla(233, 10%, 56%, 1);
+  --blue-gray: hsla(234, 25%, 52%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  /* gradient */
+  --gradient-orange: background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  --gradient-blue: background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
 }
 
 body {
@@ -46,4 +55,55 @@ body {
   text-rendering: optimizeSpeed;
   font-family: 'IBM Plex Sans';
   background-color: var(--white);
+}
+
+/* typography */
+
+.heading-xl {
+  font: 800 56px/71px 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-l {
+  font: 800 40px/50px 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-m {
+  font: 800 32px/40px 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.heading-s {
+  font: 800 24px/30px 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark-blue);
+}
+
+.body-m {
+  font: 500 18px/28px 'Plus Jakarta Sans', sans-serif;
+  color: var(--gray);
+}
+
+.body-s {
+  font: 700 16px/28px 'Plus Jakarta Sans', sans-serif;
+  color: var(--gray);
+}
+
+/* *** */
+
+.btn {
+  font: 700 18px/28px 'Plus Jakarta Sans', sans-serif;
+  padding: 14px 32px;
+}
+
+.btn-1 {
+  background-color: var(--dark-blue);
+}
+
+.btn-2 {
+  background-color: var(--gradient-orange);
+}
+
+.btn-3 {
+  background-color: var(--gradient-blue);
 }
