@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +55,7 @@ body {
   min-height: 100vh;
   line-height: 1.3;
   text-rendering: optimizeSpeed;
-  font-family: 'IBM Plex Sans';
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--white);
 }
 
