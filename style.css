@@ -46,9 +46,6 @@ button {
   --gray: hsla(233, 10%, 56%, 1);
   --blue-gray: hsla(234, 25%, 52%, 1);
   --white: hsla(0, 0%, 100%, 1);
-  /* gradient */
-  /* --gradient-orange: background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
-  --gradient-blue: background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%); */
 }
 
 /* html {
@@ -61,6 +58,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+  position: relative;
 }
 
 /* typography + buttons */
@@ -143,11 +141,78 @@ footer {
   fill: var(--white);
 }
 
+/* container */
+.container {
+  margin: 38.75px 165px 140px 165px;
+}
+
 /* hero */
 
 .hero {
   display: flex;
+  padding-top: 165px;
+  max-width: 460px;
+  padding-bottom: 226px;
 }
+
+.hero-image {
+  position: absolute;
+  /* content: url(./assets/image-hero-desktop@2x.webp); */
+  width: 991.63px;
+  height: 936.92px;
+  left: 784px;
+  top: -146.13px;
+}
+
+/* card */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.margin-top-card-50 {
+  margin-top: 50px;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 24px;
+}
+
+.padding-bottom-28 {
+  padding-bottom: 28px;
+}
+
+.card {
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 32px 64px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+}
+
+.gradient {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.card img {
+  height: 56px;
+  position: absolute;
+  margin-top: -60px;
+}
+
+.card .heading-s {
+  padding-top: 32px;
+}
+
+.card .heading-m {
+  color: var(--white);
+}
+
+
+
+/* footer */
 
 footer {
   align-items: center;
