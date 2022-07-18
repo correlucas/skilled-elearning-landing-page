@@ -130,6 +130,7 @@ a {
 header,
 footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -151,8 +152,12 @@ footer {
 .hero {
   display: flex;
   padding-top: 165px;
-  max-width: 460px;
   padding-bottom: 226px;
+  align-items: flex-start;
+}
+
+.hero-heading {
+  max-width: 460px;
 }
 
 .hero-image {
