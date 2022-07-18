@@ -157,12 +157,13 @@ footer {
 
 .hero-image {
   position: absolute;
-  /* content: url(./assets/image-hero-desktop@2x.webp); */
-  width: 991.63px;
-  height: 936.92px;
-  left: 784px;
-  top: -146.13px;
+  transform: translate(20px, 20px);
+  max-width: 991.63px;
+  max-height: 936.92px;
+
 }
+
+.hero-image img {}
 
 /* card */
 
