@@ -146,7 +146,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 .logo {
@@ -165,7 +165,6 @@ header {
 /* container */
 .container,
 .footer-wrapper {
-  /* margin: 38.75px 165px 140px 165px; */
   margin: 0 auto;
   max-width: 1110px;
 }
@@ -198,6 +197,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  row-gap: 60px;
   padding-bottom: 140px;
 }
 
@@ -242,3 +242,23 @@ footer {
 
 /* hover states */
 @media (hover:hover) {}
+
+
+@media (max-width: 1200px) {
+
+  .container-wrapper,
+  .footer-wrapper {
+    margin: 0 40px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
