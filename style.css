@@ -194,7 +194,8 @@ header {
   padding-bottom: 140px;
 }
 
-.card {
+.card,
+.card-hover {
   position: relative;
   border-radius: 15px;
   background-color: var(--white);
@@ -217,7 +218,7 @@ header {
   padding-top: 32px;
 }
 
-.card .heading-m {
+.card-hover .heading-m {
   color: var(--white);
 }
 
@@ -238,8 +239,9 @@ footer {
 @media (hover:hover) {
 
   .card:hover {
-    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.174);
+    box-shadow: 0px 25px 50px rgba(38, 22, 96, 0.25);
     transition: ease-in-out 0.3s;
+    transform: scale(1.03);
   }
 
   .card img {
@@ -288,14 +290,17 @@ footer {
   .card-hover:hover {
     transition: all ease-in-out 0.5s;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-image: url(./assets/card-photo.png);
+    box-shadow: 0px 25px 50px rgba(255, 233, 240, 0.25);
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   /* *** */
-
-
 
   .btn:hover,
   .btn-1:hover,
