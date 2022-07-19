@@ -107,12 +107,7 @@ button {
   transition: all ease 0.3s;
 }
 
-.btn:hover,
-.btn-1:hover,
-.link:hover {
-  opacity: 0.75;
-  transition: all ease 0.3s;
-}
+
 
 a {
   color: var(--white);
@@ -153,10 +148,7 @@ header {
   fill: var(--dark-blue);
 }
 
-.logo:hover,
-.logo-footer:hover {
-  fill: var(--pink);
-}
+
 
 .logo-footer {
   fill: var(--white);
@@ -241,7 +233,47 @@ footer {
 }
 
 /* hover states */
-@media (hover:hover) {}
+@media (hover:hover) {
+
+  .card img {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+  }
+
+  .card img:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover~h3 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover~a {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transition: ease-in-out 0.5s;
+  }
+
+  .btn:hover,
+  .btn-1:hover,
+  .link:hover {
+    opacity: 0.75;
+    transition: all ease 0.3s;
+  }
+
+  .logo:hover,
+  .logo-footer:hover {
+    fill: var(--pink);
+  }
+}
 
 
 @media (max-width: 1200px) {
