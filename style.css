@@ -49,15 +49,6 @@ button {
   --white: hsla(0, 0%, 100%, 1);
 }
 
-/* footer */
-
-footer {
-  align-items: center;
-  background-color: var(--dark-blue);
-  padding: 32px 165px;
-}
-
-
 /* typography + buttons + paddings */
 
 .heading-xl {
@@ -151,11 +142,11 @@ body {
 
 /* header */
 
-header,
-footer {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .logo {
@@ -172,8 +163,11 @@ footer {
 }
 
 /* container */
-.container {
-  margin: 38.75px 165px 140px 165px;
+.container,
+.footer-wrapper {
+  /* margin: 38.75px 165px 140px 165px; */
+  margin: 0 auto;
+  max-width: 1110px;
 }
 
 /* hero */
@@ -185,13 +179,14 @@ footer {
   align-items: flex-start;
 }
 
+/* 
 .hero-image {
   position: absolute;
   width: 991.63px;
   height: 936.92px;
   left: 784px;
   top: -146.13px;
-}
+} */
 
 .hero-heading {
   max-width: 460px;
@@ -203,6 +198,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  padding-bottom: 140px;
 }
 
 .card {
@@ -231,7 +227,18 @@ footer {
   color: var(--white);
 }
 
+/* footer */
 
+footer {
+  background-color: var(--dark-blue);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+}
 
 /* hover states */
 @media (hover:hover) {}
