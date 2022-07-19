@@ -200,6 +200,7 @@ header {
   background-color: var(--white);
   padding: 32px 64px;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  transition: ease-in-out 0.3s;
 }
 
 .gradient {
@@ -238,6 +239,7 @@ footer {
 
   .card:hover {
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.174);
+    transition: ease-in-out 0.3s;
   }
 
   .card img {
@@ -249,6 +251,7 @@ footer {
     transition: ease-in-out 0.5s;
   }
 
+  /* card icon affects card text */
   .card img:hover~h3 {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     -webkit-background-clip: text;
@@ -258,9 +261,24 @@ footer {
     transition: ease-in-out 0.5s;
   }
 
+  .card img:hover~a,
+  .card h3:hover {
+    color: var(--pink);
+    transition: ease-in-out 0.5s;
+  }
+
+  .card img:hover~p {
+    opacity: 0.75;
+    transition: ease-in-out 0.5s;
+  }
+
+  /* *** */
+
+  /* card-hover photo + scale */
   .card-hover:hover~.card {
     transform: scale(0.9);
     filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
   }
 
   .card-hover {
@@ -268,23 +286,16 @@ footer {
   }
 
   .card-hover:hover {
-    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/card-photo.png);
   }
 
-  .card img:hover~a,
-  .card h3:hover {
-    color: var(--purple);
-    transition: ease-in-out 0.5s;
-  }
+  /* *** */
 
-  .card img:hover {
-    filter: hue-rotate(-60deg);
-  }
 
-  .card img:hover~p {
-    opacity: 0.75;
-    transition: ease-in-out 0.5s;
-  }
 
   .btn:hover,
   .btn-1:hover,
@@ -310,6 +321,12 @@ footer {
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card-hover:hover {
+    background-size: cover;
+    background-position: right;
+    background-image: url(./assets/card-photo-tablet.png);
+  }
 }
 
 @media (max-width: 640px) {
@@ -317,4 +334,15 @@ footer {
     grid-template-columns: 1fr;
     gap: 50px;
   }
+
+
+  .card-hover:hover {
+    background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  }
+
+  .card-hover:hover~.card {
+    transform: unset;
+    filter: unset;
+  }
+
 }
