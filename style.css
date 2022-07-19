@@ -6,6 +6,7 @@
   text-decoration: 0;
   box-sizing: border-box;
   font-size: 16px;
+  transition: all ease 0.2s;
 }
 
 /* A elements that don't have a class get default styles */
@@ -48,20 +49,16 @@ button {
   --white: hsla(0, 0%, 100%, 1);
 }
 
-/* html {
-  background-color: var(--white);
-} */
+/* footer */
 
-body {
-  min-height: 100vh;
-  line-height: 1.3;
-  text-rendering: optimizeSpeed;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-  position: relative;
+footer {
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 32px 165px;
 }
 
-/* typography + buttons */
+
+/* typography + buttons + paddings */
 
 .heading-xl {
   font: 800 56px/71px 'Plus Jakarta Sans', sans-serif;
@@ -95,16 +92,35 @@ body {
 
 .link {
   font: 700 18px/28px 'Plus Jakarta Sans', sans-serif;
-  color: var(--pink);
+  color:
+    var(--pink);
 }
 
-/* *** */
+.margin-top-card-50 {
+  margin-top: 50px;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 24px;
+}
+
+.padding-bottom-28 {
+  padding-bottom: 28px;
+}
 
 .btn {
   font: 500 18px/28px 'Plus Jakarta Sans', sans-serif;
   padding: 14px 32px;
   border-radius: 50px;
   color: var(--white);
+  transition: all ease 0.3s;
+}
+
+.btn:hover,
+.btn-1:hover,
+.link:hover {
+  opacity: 0.75;
+  transition: all ease 0.3s;
 }
 
 a {
@@ -125,6 +141,14 @@ a {
 
 /* *** */
 
+body {
+  min-height: 100vh;
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
 /* header */
 
 header,
@@ -136,6 +160,11 @@ footer {
 
 .logo {
   fill: var(--dark-blue);
+}
+
+.logo:hover,
+.logo-footer:hover {
+  fill: var(--pink);
 }
 
 .logo-footer {
@@ -156,19 +185,17 @@ footer {
   align-items: flex-start;
 }
 
+.hero-image {
+  position: absolute;
+  width: 991.63px;
+  height: 936.92px;
+  left: 784px;
+  top: -146.13px;
+}
+
 .hero-heading {
   max-width: 460px;
 }
-
-.hero-image {
-  position: absolute;
-  transform: translate(20px, 20px);
-  max-width: 991.63px;
-  max-height: 936.92px;
-
-}
-
-.hero-image img {}
 
 /* card */
 
@@ -176,18 +203,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-}
-
-.margin-top-card-50 {
-  margin-top: 50px;
-}
-
-.padding-bottom-24 {
-  padding-bottom: 24px;
-}
-
-.padding-bottom-28 {
-  padding-bottom: 28px;
 }
 
 .card {
@@ -218,10 +233,5 @@ footer {
 
 
 
-/* footer */
-
-footer {
-  align-items: center;
-  background-color: var(--dark-blue);
-  padding: 32px 165px;
-}
+/* hover states */
+@media (hover:hover) {}
