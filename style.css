@@ -144,7 +144,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-top: 30px;
 }
 
 .logo {
@@ -158,24 +158,22 @@ header {
 /* container */
 .container,
 .footer-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 1110px;
 }
 
 /* hero */
 
 .hero {
-  display: grid;
+  display: flex;
   overflow: visible;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  padding-top: 75px;
-  padding-bottom: 188px;
+  gap: 20px;
+  padding-top: 180px;
+  padding-bottom: 220px;
 }
 
 .hero-heading {
-  max-width: 540px;
+  max-width: 500px;
 }
 
 .hero-img {
@@ -320,6 +318,27 @@ footer {
   }
 }
 
+@media (min-width: 2000px) {
+  .hero-img {
+    position: absolute;
+    left: 53%;
+    top: -5%;
+    width: 100%;
+  }
+
+  .hero-img img {
+    max-height: 800px;
+  }
+}
+
+@media (max-width: 1980px) {
+  .hero-img {
+    position: absolute;
+    left: 61.5%;
+    top: -3.5%;
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 1200px) {
@@ -327,6 +346,11 @@ footer {
   .container-wrapper,
   .footer-wrapper {
     margin: 0 40px;
+  }
+
+  .hero-img {
+    left: 66.5%;
+    top: -2%;
   }
 
   .features {
@@ -346,12 +370,72 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  .hero-img {
+    left: 58%;
+    top: -2%;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading-xl {
+    font: 800 40px/44px 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .body-m {
+    font: 500 16px/24px 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .hero-img {
+    left: 45%;
+    top: 0%;
+  }
+
+  .hero-heading {
+    max-width: 340px;
+  }
+
+  .features {
+    gap: 16px;
+    row-gap: 50px;
+  }
+
+}
+
 @media (max-width: 640px) {
+
+  .container {
+    margin: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .hero-img {
+    position: initial;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+  }
+
   .features {
     grid-template-columns: 1fr;
     gap: 50px;
   }
 
+  .card {
+    padding: 16px 32px;
+  }
+
+  .card img {
+    height: 50px;
+    position: absolute;
+    margin-top: -40px;
+  }
 
   .card-hover:hover {
     background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
@@ -360,6 +444,14 @@ footer {
   .card-hover:hover~.card {
     transform: unset;
     filter: unset;
+  }
+
+  .btn,
+  .btn-1,
+  .btn-2,
+  .btn-3 {
+    font: 500 16px/28px 'Plus Jakarta Sans', sans-serif;
+    padding: 10px 24px;
   }
 
 }
