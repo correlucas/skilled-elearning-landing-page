@@ -162,28 +162,6 @@ header {
   max-width: 1110px;
 }
 
-/* hero */
-
-.hero {
-  display: flex;
-  padding-top: 165px;
-  padding-bottom: 226px;
-  align-items: flex-start;
-}
-
-/* 
-.hero-image {
-  position: absolute;
-  width: 991.63px;
-  height: 936.92px;
-  left: 784px;
-  top: -146.13px;
-} */
-
-.hero-heading {
-  max-width: 460px;
-}
-
 /* card */
 
 .features {
@@ -278,7 +256,7 @@ footer {
 
   /* card-hover photo + scale */
   .card-hover:hover~.card {
-    transform: scale(0.9);
+    transform: scale(0.95);
     filter: hue-rotate(-60deg);
     transition: all ease-in-out 0.5s;
   }
@@ -315,6 +293,76 @@ footer {
   }
 }
 
+@media (max-width: 2685px) {
+
+  .hero {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-heading {
+    max-width: 100%;
+  }
+
+  .hero-image-wide {
+    width: 602.23px;
+    height: 569px;
+    content: url(./assets/image-hero-wide.png);
+  }
+}
+
+
+@media (max-width: 2000px) {
+  .hero-image-wide {
+    display: none;
+  }
+
+
+  .hero {
+    display: flex;
+    padding-top: 165px;
+    padding-bottom: 226px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .hero-heading {
+    max-width: 460px;
+  }
+
+  .hero-image {
+    position: absolute;
+    background-image: url(./assets/image-hero-desktop@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -150px;
+    right: -90px;
+    width: 994px;
+    height: 950px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-image {
+    display: none;
+  }
+
+  .hero-image-tablet {
+    background-image: url(./assets/image-hero-desktop@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -150px;
+    right: -336px;
+    width: 991.63px;
+    height: 936.92px;
+  }
+}
+
 
 @media (max-width: 1200px) {
 
@@ -331,6 +379,12 @@ footer {
     background-size: cover;
     background-position: right;
     background-image: url(./assets/card-photo-tablet.png);
+  }
+
+  .card-hover:hover~.card {
+    transform: scale(1);
+    filter: hue-rotate(-60deg);
+    transition: all ease-in-out 0.5s;
   }
 }
 
