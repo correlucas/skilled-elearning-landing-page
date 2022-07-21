@@ -147,7 +147,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0 180px 0;
+  padding-top: 30px;
+  padding-bottom: 180px;
 }
 
 .logo {
@@ -163,6 +164,15 @@ header {
   margin: 0 auto;
   max-width: 1110px;
 }
+
+.padding-inline-20 {
+  padding-inline: 20px;
+}
+
+.margin-inside {
+  padding: 0 40px;
+}
+
 
 /* hero */
 
@@ -234,7 +244,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 0;
+  padding-block: 30px;
 }
 
 /* hover states */
