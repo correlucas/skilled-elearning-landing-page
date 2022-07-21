@@ -332,11 +332,14 @@ footer {
 
 @media (max-width: 1200px) {
 
-
   .hero-img {
     position: absolute;
-    left: 71.8%;
-    top: 0;
+    left: 59.5%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 70%;
   }
 
   .features {
@@ -366,11 +369,19 @@ footer {
     font: 500 16px/24px 'Plus Jakarta Sans', sans-serif;
   }
 
-
   .hero-heading {
-    max-width: 340px;
+    max-width: 380px;
   }
 
+  .hero-img {
+    position: absolute;
+    left: 44%;
+    top: -10%;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
 
   .features {
     gap: 16px;
@@ -390,7 +401,7 @@ footer {
     flex-direction: column;
     padding-top: 40px;
     gap: 40px;
-    padding-bottom: 45px;
+    padding-bottom: 10px;
   }
 
   .heading-xl {
