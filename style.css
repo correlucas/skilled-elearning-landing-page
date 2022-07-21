@@ -418,7 +418,7 @@ footer {
   }
 
   .heading-xl {
-    font: 800 34px/38px 'Plus Jakarta Sans', sans-serif;
+    font: 800 40px/44px 'Plus Jakarta Sans', sans-serif;
   }
 
   .padding-bottom-30,
@@ -428,6 +428,10 @@ footer {
 
   .hero-img {
     position: initial;
+  }
+
+  .hero-img img {
+    margin: 0 auto;
   }
 
   .hero-heading {
