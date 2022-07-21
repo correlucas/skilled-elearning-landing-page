@@ -147,7 +147,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  padding: 30px 0 180px 0;
 }
 
 .logo {
@@ -168,12 +168,12 @@ header {
 /* hero */
 
 .hero {
-  display: flex;
-  overflow: visible;
+  position: relative;
+  overflow: hidden;
   gap: 20px;
-  padding-top: 180px;
-  padding-bottom: 220px;
+  padding-bottom: 260px;
 }
+
 
 .hero-heading {
   max-width: 500px;
@@ -181,14 +181,11 @@ header {
 
 .hero-img {
   position: absolute;
-  left: 59.5%;
-  top: -10%;
-  width: 100%;
+  left: 53.4%;
+  top: -20%;
+  z-index: -1;
 }
 
-.hero-img img {
-  max-height: 740px;
-}
 
 /* card */
 
