@@ -22,7 +22,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q/hub/skilled-elearning-landing-page-vanilla-css-wr-dMF3Qk1)
-- Live Site URL: [Live Site at Vercel](https://huddle-landing-page-section-xi.vercel.app/)
+- Live Site URL: [Live Site at Vercel](https://skilled-elearning-landing-page-seven.vercel.app/)
 ## My process
 
 ### Built with
