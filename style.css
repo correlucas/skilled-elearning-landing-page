@@ -15,11 +15,14 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img {
   max-width: 100%;
   display: block;
   line-height: 0;
+}
+
+picture {
+  width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -318,7 +321,7 @@ footer {
   }
 }
 
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
   .hero-img {
     position: absolute;
     left: 53%;
@@ -338,12 +341,12 @@ footer {
     top: -3.5%;
     width: 100%;
   }
-}
+} */
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 
-  .container-wrapper,
+  .wrapper,
   .footer-wrapper {
     margin: 0 40px;
   }
@@ -368,8 +371,9 @@ footer {
     filter: hue-rotate(-60deg);
     transition: all ease-in-out 0.5s;
   }
-}
+} */
 
+/* 
 @media (max-width: 1000px) {
   .hero-img {
     left: 58%;
@@ -471,4 +475,4 @@ footer {
     padding: 8px 24px;
   }
 
-}
+} */
