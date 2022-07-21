@@ -106,7 +106,7 @@ button {
 
 
 .btn {
-  font: 500 18px/28px 'Plus Jakarta Sans', sans-serif;
+  font: 500 18px/24px 'Plus Jakarta Sans', sans-serif;
   padding: 14px 32px;
   border-radius: 50px;
   color: var(--white);
@@ -202,7 +202,7 @@ header {
   position: relative;
   border-radius: 15px;
   background-color: var(--white);
-  padding: 32px 64px;
+  padding: 32px 38px;
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   transition: ease-in-out 0.3s;
 }
@@ -395,6 +395,7 @@ footer {
     max-width: 340px;
   }
 
+
   .features {
     gap: 16px;
     row-gap: 50px;
@@ -409,9 +410,20 @@ footer {
   }
 
   .hero {
+    overflow: unset;
     flex-direction: column;
     padding-top: 40px;
+    gap: 40px;
     padding-bottom: 45px;
+  }
+
+  .heading-xl {
+    font: 800 34px/38px 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .padding-bottom-30,
+  .padding-bottom-50 {
+    padding-bottom: 28px;
   }
 
   .hero-img {
@@ -425,6 +437,7 @@ footer {
   .features {
     grid-template-columns: 1fr;
     gap: 50px;
+    padding-bottom: 60px;
   }
 
   .card {
@@ -450,8 +463,8 @@ footer {
   .btn-1,
   .btn-2,
   .btn-3 {
-    font: 500 16px/28px 'Plus Jakarta Sans', sans-serif;
-    padding: 10px 24px;
+    font: 500 15px/24px 'Plus Jakarta Sans', sans-serif;
+    padding: 8px 24px;
   }
 
 }
